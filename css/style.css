@@ -1,13 +1,17 @@
-.container-1{
+ [class*="container-"] {
     width: 600px;
     height: 300px;
     border: 2px solid black;
     display: grid;
+    }
+
+
+    .container-1{
     grid-template-columns: [header-width-start] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [header-width-end];
     grid-template-rows: [header-height-start] 25% [header-height-end] 100px [third-line] auto [last-line];
+    }
     
-    
-}
+
 
 
 .item-a{
@@ -33,7 +37,7 @@
     
 }
 
-.container-1{
+.container-2{ 
     width: 600px;
     height: 300px;
     border: 2px solid black;
