@@ -60,5 +60,34 @@ border: 1px solid black;
     justify-self: stretch;
     place-self: center;
 }
-    
-    
+
+.container-3{
+ grid-template-columns:repeat(4, 1fr);
+grid-template-rows: auto;
+grid-template-areas:
+"header header header sidebar"
+"content content content  sidebar"
+"footer footer footer footer";
+gap: 20px;
+
+
+
+}
+
+header{
+    grid-area: header;
+    background-color: pink;
+}
+main{
+    background-color: beige;
+    grid-area: content;
+}    
+
+aside{
+    background-color: limegreen;
+    grid-area: sidebar;
+}
+footer{
+    background-color: skyblue;
+    grid-area: footer;
+}    
