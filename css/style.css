@@ -37,9 +37,28 @@
     
 }
 
-.container-2{ 
-    width: 600px;
-    height: 300px;
-    border: 2px solid black;
-    display: grid;
+.container-2 {
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+padding: 10px;
+
+column-gap: 10px;
+row-gap: 10px;
+justify-items: stretch;
+align-items: stretch;
+place-items: stretch;
+justify-content:end;
+}
+
+[class*="box"]{
+border: 1px solid black;
+
+
+}
+
+.box5{
+    justify-self: stretch;
+    place-self: center;
+}
+    
     
